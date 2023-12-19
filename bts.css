@@ -32,8 +32,10 @@ font-style: oblique;
     height: 300px;
     padding-top: 10px;
     margin-left: 32%;
-    background-color: rgb(202, 184, 184);
+    background-color: rgba(0, 0, 0, 0.338) ;
+    box-shadow: 2px 2px 5px black;
     border-radius: 10px;
+    color: white;
 
   }
   .btssio h1 {
@@ -59,9 +61,10 @@ font-style: oblique;
     height: 300px;
     padding-top: 10px;
     margin-left: 10%;
-    background-color: rgb(202, 184, 184);
+    background-color: rgba(0, 0, 0, 0.338) ;
+    box-shadow: 2px 2px 5px black;
     border-radius: 10px ;
-
+    color: white;
   }
   .SLAM h1 {
     margin-left: 15%;
@@ -79,7 +82,9 @@ font-style: oblique;
     height: 300px;
     padding-top: 10px;
     margin-left: 65%;
-    background-color: rgb(202, 184, 184);
+    background-color: rgba(0, 0, 0, 0.338) ;
+    box-shadow: 2px 2px 5px black;
+    color: white;
     border-radius: 10px;
 
   }

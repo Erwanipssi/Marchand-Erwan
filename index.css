@@ -212,7 +212,7 @@ font-style: oblique;
     
   }
 
-  .skills {
+  .carde {
     position: absolute;
     margin-top: 140%;
 width: 500px;
@@ -221,65 +221,98 @@ background-color: rgb(196, 196, 196);
 border: solid 1px black;
   }
 
-  .skills h2 {
-    margin-top: 30px;
-    margin-left: 33%;
+  .carde h2 {
+    color: white;
+    align-items: center;
+    text-align: center;
   }
 
-  .skills button {
-    margin-top: 30px;
+  .carde button {
+    margin-top: 20px;
     display: flex;
-    margin-left: 50px;
+    margin-left: 20px;
+    background: ( to left, rgb(255, 255, 255), rgb(114, 114, 114));
   }
- 
-  .skills .btn1 {
+ .carde .btn1{
+  padding: 5px;
+ }
+  .carde .btn1 {
     border-radius: 20px;
     border-style: none;
     width: 80%;
+    height: 25px;
     text-align: center;
     font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient( to left, rgb(255, 255, 255), rgb(114, 114, 114));
   }
 
-  .skills .btn2 {
+  .carde .btn2 {
     border-radius: 20px;
     border-style: none;
+    height: 25px;
     width: 80%;
     text-align: center;
+    font-weight: bold;
     font-size: 15px;
+    background: linear-gradient( to left, rgb(255, 255, 255), rgb(114, 114, 114));
   }
-  .skills .btn3 {
+  .carde .btn3 {
     border-radius: 20px;
     border-style: none;
+    height: 25px;
     width: 65%;
     text-align: center;
+    font-weight: bold;
     font-size: 15px;
+    background: linear-gradient( to left, rgb(255, 255, 255), rgb(114, 114, 114));
   }
-  .skills .btn4 {
+  .carde .btn4 {
     border-radius: 20px;
     border-style: none;
+    height: 25px;
     width: 60%;
     text-align: center;
+    font-weight: bold;
     font-size: 15px;
+    background: llinear-gradient( to left, rgb(255, 255, 255), rgb(114, 114, 114));
   }
-  .skills .btn5 {
+  .carde .btn5 {
     border-radius: 20px;
     border-style: none;
+    height: 25px;
     width: 65%;
     text-align: center;
+    font-weight: bold;
     font-size: 15px;
+    background: linear-gradient( to left, rgb(255, 255, 255), rgb(114, 114, 114));
   }
-  .skills .btn6 {
+  .carde .btn6 {
     border-radius: 20px;
     border-style: none;
+    height: 25px;
+    font-weight: bold;
+    background: linear-gradient( to left, rgb(255, 255, 255), rgb(114, 114, 114));
     width: 80%;
     font-size: 15px;
-    text-align: center ;
+  }
+  .btndowncomp{
+    background-color: rgba(255, 0, 47, 0.726) ;
+    border-radius: 15px;
+    width: 100px;
+    border: none;
+  }
+  .btndowncomp a {
+
+    text-decoration: none;
+
   }
 
-  .skills a {
+  .carde a {
     text-decoration: none;
+    color: black  ;
   }
-  .skills a button {
+  .carde a button {
     margin-left: 40%;
     list-style: none;
     background: rgb(255, 102, 102);
@@ -405,3 +438,62 @@ border: solid 1px black;
   .entreprise p {
     margin-top: 70px;
   }
+  .carde {
+    width: 300px;
+    height: 404px;
+    background-color: #000;
+    align-items: center;
+
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .carde::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 310px;
+    height: 408px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .carde::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  
+  .carde p:not(.heading) {
+    font-size: 14px;
+  }
+  
+  .carde p:last-child {
+    color: #e81cff;
+    font-weight: 600;
+  }
+  
+  .carde:hover::after {
+    filter: blur(30px);
+  }
+  
+  .carde:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+  }
+  
+  
